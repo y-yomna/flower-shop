@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+        <title>blog</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(248, 247, 245);">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+            <div class="container">
+              <a class="navbar-brand" href="home.html" style="font-family:Lavishly Yours, serif;font-weight: 600;font-size: 45px;">rosa bella</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav mb-2 mb-lg-0 gap-3">
+                  <li class="nav-item fs-5">
+                    <a class="nav-link" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item fs-5">
+                    <a class="nav-link" href="home.html#about">about</a>
+                  </li>
+                  <li class="nav-item fs-5">
+                    <a class="nav-link" href="shop.html">shop</a>
+                  </li>
+                  <li class="nav-item active fs-5">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item fs-5">
+                    <a class="nav-link" href="contact.html">contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <div class="text-center m-auto pt-5" style="width: 45%; color: #D63384;"><h1>Secrets and Beauty of Flowers You Never Knew Before.</h1></div>
+    <section class="flip-book d-flex justify-content-center align-items-center m-5 p-3">
+        <input type="checkbox" id="checkbox-cover">
+        <input type="checkbox" id="checkbox-page1">
+        <input type="checkbox" id="checkbox-page2">
+        <input type="checkbox" id="checkbox-page3">
+        <input type="checkbox" id="checkbox-page4">
+        <input type="checkbox" id="checkbox-page5">
+        <div class="book">
+            <div class="cover shadow">
+                <label for="checkbox-cover"></label>
+            </div>
+            <div class="page" id="page1">
+                <div class="front-page">
+                    <img src="imgs/book-slid(1).png" alt="">
+                    <h4 class="text-center" style="color: #D63384;">Did you know that every rose tells a story ?</h4>
+                    <h5 class="text-center">That its colors and scents are not just a coincidence but carry meanings and messages? In this book, we will reveal the secrets of roses—from their rich history to their psychological benefits and the strangest types found around the world.</h5>
+                    <label class="next" for="checkbox-page1"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <img src="imgs/Camellia flower3.jpg">
+                    <label class="prev" for="checkbox-page1"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+            <div class="page" id="page2">
+                <div class="front-page">
+                    <h2 class="text-center" style="color: #D63384;">Camellia flower</h2>
+                    <p class="px-3"><strong>Origin and History: </strong><br>
+                        The camellia originated in East Asia, particularly in Japan, China, and Korea, where it was considered a royal flower and was cultivated in the gardens of palaces.
+                        <br>It comes in a variety of colors, such as white, red, pink, and yellow, with each color carrying its own special meaning.
+                    </p>
+                    <p class="px-3">
+                        <strong>Red Camellia</strong><i class="fa-solid fa-heart text-danger px-1"></i><i class="fa-solid fa-arrow-right pe-1"></i>Represents deep love and strong desire. <br>
+                        <strong>pink Camellia</strong><i class="fa-solid fa-heart px-1" style="color: rgb(253, 135, 154);"></i><i class="fa-solid fa-arrow-right pe-1"></i>Signifies admiration, tenderness, and caring for others. <br>
+                        <strong>Yellow Camellia</strong><i class="fa-solid fa-heart text-warning px-1"></i><i class="fa-solid fa-arrow-right pe-1"></i>Represents the desire for success and appreciation.
+                    </p>
+                    <label class="next" for="checkbox-page2"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <img src="imgs/Black Baccara Rose4.jpg">
+                    <label class="prev" for="checkbox-page2"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+            <div class="page" id="page3">
+              <div class="front-page">
+                  <h2 class="text-center" style="color: #D63384;">Black Baccara</h2>
+                  <ul>
+                    <li>This rose is known for its very deep red color that appears velvety black under low lighting, giving it a mysterious and unique appearance.</li>
+                    <li>In fact, there are no completely natural black roses, but Black Baccara is one of the closest types to this color</li>
+                  </ul>
+                  <h5 class="text-center py-1" style="color: #D63384;">The meaning of the Black Baccara</h5>
+                  <ul>
+                    <li>Mystery and allure <i class="fa-solid fa-arrow-right px-1" style="color: #D63384;"></i>Reflects a strong and enchanting personality.</li>
+                    <li>Deep love and passion<i class="fa-solid fa-arrow-right px-1" style="color: #D63384;"></i>Its dark color symbolizes deep emotional feelings.</li>
+                    <li>Luxury and strength<i class="fa-solid fa-arrow-right px-1" style="color: #D63384;"></i>Used in luxurious gifts and symbolizes distinction.</li>
+                  </ul>
+                  <label class="next" for="checkbox-page3"><i class="fas fa-chevron-right"></i></label>
+              </div>
+              <div class="back-page">
+                  <img src="imgs/some-image.jpg">
+                  <label class="prev" for="checkbox-page3"><i class="fas fa-chevron-left"></i></label>
+              </div>
+            </div>
+            <div class="page" id="page4">
+              <div class="front-page">
+                  <h2 class="text-center" style="color: #D63384;">page4</h2>
+                  <ul>
+                    <li>This rose is known for its very deep red color that appears velvety black under low lighting, giving it a mysterious and unique appearance.</li>
+                    <li>In fact, there are no completely natural black roses, but Black Baccara is one of the closest types to this color</li>
+                  </ul>
+                  <h5 class="text-center py-1" style="color: #D63384;">The meaning of the Black Baccara</h5>
+                  <ul>
+                    <li>Mystery and allure <i class="fa-solid fa-arrow-right px-1" style="color: #D63384;"></i>Reflects a strong and enchanting personality.</li>
+                    <li>Deep love and passion<i class="fa-solid fa-arrow-right px-1" style="color: #D63384;"></i>Its dark color symbolizes deep emotional feelings.</li>
+                    <li>Luxury and strength<i class="fa-solid fa-arrow-right px-1" style="color: #D63384;"></i>Used in luxurious gifts and symbolizes distinction.</li>
+                  </ul>
+                  <label class="next" for="checkbox-page4"><i class="fas fa-chevron-right"></i></label>
+              </div>
+              <div class="back-page">
+                  <img src="imgs/some-image.jpg">
+                  <label class="prev" for="checkbox-page4"><i class="fas fa-chevron-left"></i></label>
+              </div>
+            </div>
+            <div class="page" id="page5">
+              <div class="front-page">
+                  <h2 class="text-center" style="color: #D63384;">Black Baccara</h2>
+                  <ul>
+                    <li>This rose is known for its very deep red color that appears velvety black under low lighting, giving it a mysterious and unique appearance.</li>
+                    <li>In fact, there are no completely natural black roses, but Black Baccara is one of the closest types to this color</li>
+                  </ul>
+                  <h5 class="text-center py-1" style="color: #D63384;">The meaning of the Black Baccara</h5>
+                  <ul>
+                    <li>Mystery and allure <i class="fa-solid fa-arrow-right px-1" style="color: #D63384;"></i>Reflects a strong and enchanting personality.</li>
+                    <li>Deep love and passion<i class="fa-solid fa-arrow-right px-1" style="color: #D63384;"></i>Its dark color symbolizes deep emotional feelings.</li>
+                    <li>Luxury and strength<i class="fa-solid fa-arrow-right px-1" style="color: #D63384;"></i>Used in luxurious gifts and symbolizes distinction.</li>
+                  </ul>
+                  <label class="next" for="checkbox-page3"><i class="fas fa-chevron-right"></i></label>
+              </div>
+              <div class="back-page">
+                  <img src="imgs/some-image.jpg">
+                  <label class="prev" for="checkbox-page3"><i class="fas fa-chevron-left"></i></label>
+              </div>
+            </div>
+            <div class="back-cover shadow"></div>
+        </div>
+    </section>
+</body>
+</html>

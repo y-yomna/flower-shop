@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+        <div class="container">
+          <a class="navbar-brand" href="home.html" style="font-family:Lavishly Yours, serif;font-weight: 600;font-size: 45px;">rosa bella</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav mb-2 mb-lg-0 gap-3">
+              <li class="nav-item fs-5">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item fs-5">
+                <a class="nav-link" href="home.html#about">about</a>
+              </li>
+              <li class="nav-item active fs-5">
+                <a class="nav-link" href="shop.html">shop</a>
+              </li>
+              <li class="nav-item fs-5">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item fs-5">
+                <a class="nav-link" href="contact.html">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="send-gift d-flex justify-content-center align-items-center p-5 gap-5">
+        <div class="img w-20"><img src="imgs/f4.png" style="width: 300px;" alt="">
+        </div>
+        <div class="text">
+          <h2 class="fs-1">send a gift <span>to your friend</span></h2>
+          <p class="fs-4 lh-base">A flower, sometimes known as a bloom or blossom, is the
+            <br>
+            reproductive structure found in flowering plants (plants of the 
+            <br>
+            division Magnoliophyta, also called angiosperms).
+          </p>
+        </div>
+    </div>
+    <div class="filter position-sticky top-0 z-2 h-auto w-100 d-flex flex-row justify-content-center align-items-center shadow gap-5 p-4 mb-4 bg-white fs-5 ">
+      <div class="d-flex gap-4">
+        <div class="dropdown">
+          <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            events
+          </div>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">all</a></li>
+            <li><a class="dropdown-item" href="#">Weddings</a></li>
+            <li><a class="dropdown-item" href="#">Proposal</a></li>
+            <li><a class="dropdown-item" href="#">Valentine</a></li>
+            <li><a class="dropdown-item" href="#">Graduation</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            color
+          </div>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">all</a></li>
+            <li><a class="dropdown-item" href="#">red</a></li>
+            <li><a class="dropdown-item" href="#">yellow</a></li>
+            <li><a class="dropdown-item" href="#">white</a></li>
+            <li><a class="dropdown-item" href="#">pink</a></li>
+          </ul>
+        </div>
+        <div class="shopping position-relative" id="cart-icon">
+          <i class="fa-solid fa-cart-shopping fs-3"></i>
+          <span class="quantity position-absolute top-0 start-100 translate-middle text-white rounded-circle p-2 d-flex justify-content-center align-items-center">0</span>
+        </div>
+      </div>
+    </div>
+    <section class="our-products d-flex">
+      <div class="swiper mySwiper h-100 w-100">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="products-container d-flex flex-row flex-wrap align-items-center justify-content-center gap-3">
+              <div class="card col-lg-3 col-md-4 col-sm-6 col-12 text-center p-0 m-3">
+                <div class="card-icon text-white position-absolute top-0 end-0 z-2">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <img src="imgs/Lilac.jpg" class="card-img-top img-fluid w-100" alt="...">
+                <img src="imgs/Lilac2.jpg" class="card-img-top img-fluid w-100 img-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Lilac</h5>
+                  <div class="price position-relative">
+                    <h3 class="position-absolute top-50 start-50 translate-middle">$445</h3>
+                    <button href="#" class="btn text-white rounded-0"><i class="fa-solid fa-cart-shopping mx-2"></i>add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-lg-3 col-md-4 col-sm-6 col-12 text-center p-0 m-3">
+                <div class="card-icon text-white position-absolute top-0 end-0 z-2">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <img src="imgs/Blue Moon Rose.jpg" class="card-img-top img-fluid w-100" alt="...">
+                <img src="imgs/Blue Moon Rose2.jpg" class="card-img-top img-fluid w-100 img-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Blue Moon</h5>
+                  <div class="price position-relative">
+                    <h3 class="position-absolute top-50 start-50 translate-middle">$450</h3>
+                    <button href="#" class="btn text-white rounded-0"><i class="fa-solid fa-cart-shopping mx-2"></i>add to cart</button>
+                  </div>
+                </div>
+              </div>     
+              <div class="card col-lg-3 col-md-4 col-sm-6 col-12 text-center p-0 m-3">
+                <div class="card-icon text-white position-absolute top-0 end-0 z-2">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <img src="imgs/Camellia Rose.jpg" class="card-img-top img-fluid w-100" alt="...">
+                <img src="imgs/Camellia Rose2.jpg" class="card-img-top img-fluid w-100 img-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Camellia</h5>
+                  <div class="price position-relative">
+                    <h3 class="position-absolute top-50 start-50 translate-middle">$500</h3>
+                    <button href="#" class="btn text-white rounded-0"><i class="fa-solid fa-cart-shopping mx-2"></i>add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-lg-3 col-md-4 col-sm-6 col-12 text-center p-0 m-3">
+                <div class="card-icon text-white position-absolute top-0 end-0 z-2">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <img src="imgs/Black Baccara Rose.jpg" class="card-img-top img-fluid w-100" alt="...">
+                <img src="imgs/Black Baccara Rose2.jpg" class="card-img-top img-fluid w-100 img-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Black Baccara</h5>
+                  <div class="price position-relative">
+                    <h3 class="position-absolute top-50 start-50 translate-middle">$245</h3>
+                    <button href="#" class="btn text-white rounded-0"><i class="fa-solid fa-cart-shopping mx-2"></i>add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-lg-3 col-md-4 col-sm-6 col-12 text-center p-0 m-3">
+                <div class="card-icon text-white position-absolute top-0 end-0 z-2">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <img src="imgs/Baby’s Breath.jpg" class="card-img-top img-fluid w-100" alt="...">
+                <img src="imgs/Baby’s Breath2.jpg" class="card-img-top img-fluid w-100 img-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Baby’s Breath</h5>
+                  <div class="price position-relative">
+                    <h3 class="position-absolute top-50 start-50 translate-middle">$345</h3>
+                    <button href="#" class="btn text-white rounded-0"><i class="fa-solid fa-cart-shopping mx-2"></i>add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-lg-3 col-md-4 col-sm-6 col-12 text-center p-0 m-3">
+                <div class="card-icon text-white position-absolute top-0 end-0 z-2">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <img src="imgs/Chocolate Rose.jpg" class="card-img-top img-fluid w-100" alt="...">
+                <img src="imgs/Chocolate Rose2.jpg" class="card-img-top img-fluid w-100 img-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Chocolate Rose</h5>
+                  <div class="price position-relative">
+                    <h3 class="position-absolute top-50 start-50 translate-middle">$350</h3>
+                    <button href="#" class="btn text-white rounded-0"><i class="fa-solid fa-cart-shopping mx-2"></i>add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-lg-3 col-md-4 col-sm-6 col-12 text-center p-0 m-3">
+                <div class="card-icon text-white position-absolute top-0 end-0 z-2">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <img src="imgs/David Austin Rose2.jpg" class="card-img-top img-fluid w-100" alt="...">
+                <img src="imgs/David Austin Rose.jpg" class="card-img-top img-fluid w-100 img-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">David Austin</h5>
+                  <div class="price position-relative">
+                    <h3 class="position-absolute top-50 start-50 translate-middle">$370</h3>
+                    <button href="#" class="btn text-white rounded-0"><i class="fa-solid fa-cart-shopping mx-2"></i>add to cart</button>
+                  </div>
+                </div>
+              </div>     
+              <div class="card col-lg-3 col-md-4 col-sm-6 col-12 text-center p-0 m-3">
+                <div class="card-icon text-white position-absolute top-0 end-0 z-2">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <img src="imgs/Hybrid Tea.jpg" class="card-img-top img-fluid w-100" alt="...">
+                <img src="imgs/Hybrid Tea2.jpg" class="card-img-top img-fluid w-100 img-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Hybrid Tea</h5>
+                  <div class="price position-relative">
+                    <h3 class="position-absolute top-50 start-50 translate-middle">$280</h3>
+                    <button href="#" class="btn text-white rounded-0"><i class="fa-solid fa-cart-shopping mx-2"></i>add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-lg-3 col-md-4 col-sm-6 col-12 text-center p-0 m-3">
+                <div class="card-icon text-white position-absolute top-0 end-0 z-2">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <img src="imgs/Cherry Blossom.jpg" class="card-img-top img-fluid w-100" alt="...">
+                <img src="imgs/Cherry Blossom2.jpg" class="card-img-top img-fluid w-100 img-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Cherry Blossom</h5>
+                  <div class="price position-relative">
+                    <h3 class="position-absolute top-50 start-50 translate-middle">$245</h3>
+                    <button href="#" class="btn text-white rounded-0"><i class="fa-solid fa-cart-shopping mx-2"></i>add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="products-container d-flex flex-row flex-wrap align-items-center justify-content-center gap-3">
+              <div class="card col-lg-3 col-md-4 col-sm-6 col-12 text-center p-0 m-3">
+                <div class="card-icon text-white position-absolute top-0 end-0 z-2">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <img src="imgs/Juliet Rose.jpg" class="card-img-top img-fluid w-100" alt="...">
+                <img src="imgs/Juliet Rose2.jpg" class="card-img-top img-fluid w-100 img-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Juliet</h5>
+                  <div class="price position-relative">
+                    <h3 class="position-absolute top-50 start-50 translate-middle">$165</h3>
+                    <button href="#" class="btn text-white rounded-0"><i class="fa-solid fa-cart-shopping mx-2"></i>add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-lg-3 col-md-4 col-sm-6 col-12 text-center p-0 m-3">
+                <div class="card-icon text-white position-absolute top-0 end-0 z-2">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <img src="imgs/Grand Gala Rose.jpg" class="card-img-top img-fluid w-100" alt="...">
+                <img src="imgs/Grand Gala Rose2.jpg" class="card-img-top img-fluid w-100 img-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Grand Gala</h5>
+                  <div class="price position-relative">
+                    <h3 class="position-absolute top-50 start-50 translate-middle">$375</h3>
+                    <button href="#" class="btn text-white rounded-0"><i class="fa-solid fa-cart-shopping mx-2"></i>add to cart</button>
+                  </div>
+                </div>
+              </div>     
+              <div class="card col-lg-3 col-md-4 col-sm-6 col-12 text-center p-0 m-3">
+                <div class="card-icon text-white position-absolute top-0 end-0 z-2">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <img src="imgs/Lavender Lace Rose.jpg" class="card-img-top img-fluid w-100" alt="...">
+                <img src="imgs/Lavender Lace Rose2.jpg" class="card-img-top img-fluid w-100 img-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Lavender Lace</h5>
+                  <div class="price position-relative">
+                    <h3 class="position-absolute top-50 start-50 translate-middle">$225</h3>
+                    <button href="#" class="btn text-white rounded-0"><i class="fa-solid fa-cart-shopping mx-2"></i>add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-lg-3 col-md-4 col-sm-6 col-12 text-center p-0 m-3">
+                <div class="card-icon text-white position-absolute top-0 end-0 z-2">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <img src="imgs/Orchid.jpg" class="card-img-top img-fluid w-100" alt="...">
+                <img src="imgs/Orchid2.jpg" class="card-img-top img-fluid w-100 img-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Orchid</h5>
+                  <div class="price position-relative">
+                    <h3 class="position-absolute top-50 start-50 translate-middle">$175</h3>
+                    <button href="#" class="btn text-white rounded-0"><i class="fa-solid fa-cart-shopping mx-2"></i>add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-lg-3 col-md-4 col-sm-6 col-12 text-center p-0 m-3">
+                <div class="card-icon text-white position-absolute top-0 end-0 z-2">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <img src="imgs/Sunflower.jpg" class="card-img-top img-fluid w-100" alt="...">
+                <img src="imgs/Sunflower2.jpg" class="card-img-top img-fluid w-100 img-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Sunflower</h5>
+                  <div class="price position-relative">
+                    <h3 class="position-absolute top-50 start-50 translate-middle">$255</h3>
+                    <button href="#" class="btn text-white rounded-0"><i class="fa-solid fa-cart-shopping mx-2"></i>add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-lg-3 col-md-4 col-sm-6 col-12 text-center p-0 m-3">
+                <div class="card-icon text-white position-absolute top-0 end-0 z-2">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <img src="imgs/Tulip.jpg" class="card-img-top img-fluid w-100" alt="...">
+                <img src="imgs/Tulip2.jpg" class="card-img-top img-fluid w-100 img-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Tulip</h5>
+                  <div class="price position-relative">
+                    <h3 class="position-absolute top-50 start-50 translate-middle">$155</h3>
+                    <button href="#" class="btn text-white rounded-0"><i class="fa-solid fa-cart-shopping mx-2"></i>add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-lg-3 col-md-4 col-sm-6 col-12 text-center p-0 m-3">
+                <div class="card-icon text-white position-absolute top-0 end-0 z-2">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <img src="imgs/Jasmine.jpg" class="card-img-top img-fluid w-100" alt="...">
+                <img src="imgs/Jasmine2.jpg" class="card-img-top img-fluid w-100 img-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Jasmine</h5>
+                  <div class="price position-relative">
+                    <h3 class="position-absolute top-50 start-50 translate-middle">$345</h3>
+                    <button href="#" class="btn text-white rounded-0"><i class="fa-solid fa-cart-shopping mx-2"></i>add to cart</button>
+                  </div>
+                </div>
+              </div>     
+              <div class="card col-lg-3 col-md-4 col-sm-6 col-12 text-center p-0 m-3">
+                <div class="card-icon text-white position-absolute top-0 end-0 z-2">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <img src="imgs/Carnation.jpg" class="card-img-top img-fluid w-100" alt="...">
+                <img src="imgs/Carnation2.jpg" class="card-img-top img-fluid w-100 img-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Carnation</h5>
+                  <div class="price position-relative">
+                    <h3 class="position-absolute top-50 start-50 translate-middle">$265</h3>
+                    <button href="#" class="btn text-white rounded-0"><i class="fa-solid fa-cart-shopping mx-2"></i>add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-lg-3 col-md-4 col-sm-6 col-12 text-center p-0 m-3">
+                <div class="card-icon text-white position-absolute top-0 end-0 z-2">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <img src="imgs/Red Roses.jpg" class="card-img-top img-fluid w-100" alt="...">
+                <img src="imgs/Red Roses2'.jpg" class="card-img-top img-fluid w-100 img-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Red Roses</h5>
+                  <div class="price position-relative">
+                    <h3 class="position-absolute top-50 start-50 translate-middle">$300</h3>
+                    <button href="#" class="btn text-white rounded-0"><i class="fa-solid fa-cart-shopping mx-2"></i>add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination position-relative my-2"></div>
+      </div>
+      <div class="cart shadow position-fixed top-0 end-0 h-100 bg-white z-3">
+        <h1 class="text-center fw-medium m-0 p-3">shopping cart</h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut position-absolute bottom-0 w-100 d-flex">
+            <div class="total w-50 p-3 text-center fw-bold ">0</div>
+            <div class="closeShopping w-50 p-3 text-center fw-bold">Close</div>
+        </div>
+    </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

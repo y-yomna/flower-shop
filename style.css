@@ -1,0 +1,498 @@
+* {
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-transform: capitalize;
+}
+:root{
+    --primary-color: rgb(0, 39, 38);;
+    --secondary-color:#33c160;
+    --white-color:#ffff;
+}
+.bg {
+    background-image: url(imgs/header-bg1.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.navbar .nav-link, .navbar .navbar-brand {
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: var(--secondary-color);
+}
+.header .btn {
+    background-color: var(--primary-color);
+    transition: 0.5s;
+}
+
+.header .btn:hover {
+    background: var(--secondary-color);
+}
+
+.header-text {
+    color: var(--primary-color);
+    animation: grow 2s ;
+}
+
+@keyframes grow {
+    from {
+        opacity: 0.5;
+        scale: 0.9;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.header-text span {
+    color: var(--secondary-color);
+}
+.best-flower .main-text{
+    color: var(--primary-color);
+}
+.best-flower .main-text span {
+    color: var(--secondary-color);
+}
+
+.best-flower .card .img-2 {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.best-flower .card-icon {
+    background: var(--primary-color);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.best-flower .card-icon i {
+    transition: 0.3s;
+    padding: 10px;
+}
+
+.best-flower .card-icon i:hover {
+    background: var(--secondary-color);
+}
+.best-flower .price h3 {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+
+.best-flower .card:hover .price h3 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.best-flower .card .btn {
+    background: var(--primary-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.best-flower .card .btn:hover {
+    background: var(--secondary-color);
+}
+
+.best-flower .card:hover .btn, .best-flower .card:hover .card-icon, .best-flower .card:hover .img-2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.best-flower .card:hover {
+    border: 1px solid var(--primary-color);
+}
+
+.best-flower .view-more .btn {
+    background: var(--white-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+
+.best-flower .view-more .btn:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.about {
+    background-image: url(imgs/about-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.about .slider-container {
+    max-width: 600px;
+}
+
+.about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    filter: blur(1.5px);
+    z-index: 1;
+}
+.about .swiper-slide {
+    background: rgba(0, 0, 0, 0.4);
+}
+.about .swiper-pagination-bullet {
+    background-color: var(--white-color);
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.about .swiper-button-next, .swiper-button-prev {
+    color: var(--white-color);
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    color: var(--secondary-color);
+}
+
+
+
+
+
+.send-gift {
+    background-color: #e9e6ed;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.send-gift .img {
+    animation: slideLeft 2s;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(30%);
+    }
+}
+
+.send-gift .text h2 {
+    color: var(--primary-color);
+    animation: slideUp 2s;
+}
+
+.send-gift .text span {
+    color: var(--secondary-color);
+}
+
+.send-gift .text p {
+    color: var(--primary-color);
+    animation: slideUp 2s;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50%);
+    }
+}
+.filter .dropdown {
+    color: var(--primary-color);
+}
+
+.filter .dropdown:hover, .filter .dropdown-item:hover {
+    color: var(--secondary-color);
+}
+.our-products .card {
+    transition: 0.5s;
+}
+.our-products .card .img-2 {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    z-index: 1;
+}
+.our-products .card-icon {
+    background: var(--primary-color);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.our-products .card-icon i {
+    transition: 0.3s;
+    padding: 10px;
+}
+
+.our-products .card-icon i:hover {
+    background: var(--secondary-color);
+}
+.our-products .price h3 {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+
+.our-products .card:hover .price h3 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.our-products .card .btn {
+    background: var(--primary-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+.our-products .card .btn:hover {
+    background: var(--secondary-color);
+}
+
+.our-products .card:hover .btn, .our-products .card:hover .card-icon, .our-products .card:hover .img-2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.our-products .card:hover {
+    border: 1px solid var(--primary-color);
+}
+.our-products .swiper-pagination-bullet {
+    width: 40px;
+    height: auto;
+    border-radius: 0;
+    text-align: center;
+    padding: 5px;
+    opacity: 1;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    color: var(--primary-color);
+}
+.our-products .swiper-pagination-bullet-active {
+    color: var(--white-color);
+    background: var(--secondary-color);
+}
+
+.cart {
+    transition: 0.5s;
+    transform: translateX(100%);
+    width: 300px;
+}
+.cart.active {
+    transform: translateX(0);
+}
+.cart h1 {
+    color: var(--primary-color);
+}
+.checkOut div {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+.checkOut div:nth-child(2) {
+    background-color: var(--primary-color);
+    color:var(--white-color);
+}
+.listCard li {
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr 80px;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.listCard li img {
+    width: 100%;
+    height: auto;
+}
+.listCard li button {
+    background-color: #33c160;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.listCard li button:hover {
+    background-color: var(--primary-color);
+}
+
+.shopping i{
+    cursor: pointer;
+}
+.shopping .quantity {
+    background: #33c160;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .glass-bg {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+    .our-products .card{
+        width: 80%;
+    }
+    .send-gift {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .cart {
+        width: 100%;
+    }
+    .listCard li {
+        grid-template-columns: 50px 1fr 1fr 60px;
+    }
+}
+
+
+
+.book {
+	width: 400px;
+	height: 500px;
+	position: relative;
+	transition-duration: 1s;
+	perspective: 1500;
+    display: flex;
+    align-items: center;
+}
+input {
+	display: none;
+}
+.cover, .back-cover {
+	background-image:url(imgs/slid2.jpg);
+    background-position: center;
+    background-size: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 0 15px 15px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform-origin: center left;
+}
+.cover {
+	position: absolute;
+	z-index: 100;
+	transition: transform 1s;
+}
+.cover label {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+.back-cover {
+	position: relative;
+	z-index: -1;
+}
+.page {
+	position: absolute;
+	background-color: white;
+	width: 360px;
+	height: 460px;
+	border-radius: 0 15px 15px 0;
+	transform-origin: left;
+	transform-style: preserve-3d;
+	transform: rotateY(0deg);
+	transition-duration: 1.5s;
+    background: #FFF0F5;
+    color: #4A4A4A;
+}
+.page img {
+	width: 100%;
+	height: 100%;
+    object-fit: cover;
+	border-radius: 15px 0 0 15px;
+}
+.front-page {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	box-sizing: border-box;
+	padding: 1rem;
+}
+.front-page img{
+    width: 30%;
+    height: auto;
+}
+.back-page {
+	transform: rotateY(180deg);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	z-index: 99;
+}
+.next, .prev {
+	position: absolute;
+	bottom: 1em;
+	cursor: pointer;
+    color: #D63384;
+}
+.next {
+	right: 1em;
+}
+.prev {
+	left: 1em;
+}
+.prev {
+	left: 1em;
+}
+#page1 {
+	z-index: 5;
+}
+#page2 {
+	z-index: 4;
+}
+#page3 {
+	z-index: 3;
+}
+#page4 {
+    z-index: 2;
+}
+#page5{
+    z-index: 1;
+}
+#checkbox-cover:checked ~ .book {
+	transform: translateX(200px);
+}
+#checkbox-cover:checked ~ .book .cover {
+	transition: transform 1.5s, z-index 0.5s 0.5s;
+	transform: rotateY(-180deg);
+	z-index: 1;
+}
+#checkbox-cover:checked ~ .book .page {
+	box-shadow: 0 0 3px rgb(99, 98, 98);
+}
+#checkbox-page1:checked ~ .book #page1 {
+	transform: rotateY(-180deg);
+	z-index: 2;
+}
+#checkbox-page2:checked ~ .book #page2 {
+	transform: rotateY(-180deg);
+	z-index: 3;
+}
+#checkbox-page3:checked ~ .book #page3 {
+	transform: rotateY(-180deg);
+	z-index: 4;
+}
+#checkbox-page4:checked ~ .book #page4 {
+	transform: rotateY(-180deg);
+	z-index: 5;
+}
