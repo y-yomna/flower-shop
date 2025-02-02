@@ -128,7 +128,6 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
-    position: relative;
 }
 
 .about .slider-container {
@@ -163,8 +162,10 @@
 .swiper-button-next:hover, .swiper-button-prev:hover {
     color: var(--secondary-color);
 }
-
-
+.slider-container {
+    width: 100%;
+    max-width: 800px; /* زيادة الحجم الأقصى */
+}
 
 
 
@@ -341,6 +342,14 @@
         padding: 10px;
         border-radius: 10px;
         transition: 0.5s;
+    }
+    .slider-container {
+        max-width: 90%; /* تكبير العرض على الشاشات الصغيرة */
+    }
+    
+    .swiper-slide {
+        padding: 15px;
+        font-size: 0.9rem; /* تصغير حجم النص */
     }
     .our-products .card{
         width: 80%;
