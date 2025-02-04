@@ -5,7 +5,7 @@
     text-transform: capitalize;
 }
 :root{
-    --primary-color: rgb(0, 39, 38);;
+    --primary-color: rgb(0, 39, 38);
     --secondary-color:#33c160;
     --white-color:#ffff;
 }
@@ -163,8 +163,7 @@
     color: var(--secondary-color);
 }
 .slider-container {
-    width: 100%;
-    max-width: 800px; /* زيادة الحجم الأقصى */
+    max-width: 800px;
 }
 
 
@@ -328,7 +327,7 @@
     cursor: pointer;
 }
 .shopping .quantity {
-    background: #33c160;
+    background: var(--secondary-color);
     width: 20px;
     height: 20px;
     cursor: pointer;
@@ -344,21 +343,21 @@
         transition: 0.5s;
     }
     .slider-container {
-        max-width: 90%; /* تكبير العرض على الشاشات الصغيرة */
-    }
-    
-    .swiper-slide {
-        padding: 15px;
-        font-size: 0.9rem; /* تصغير حجم النص */
-    }
-    .our-products .card{
-        width: 80%;
+        max-width: 90%;
     }
     .send-gift {
         height: auto;
         flex-direction: column;
         gap: 20px;
         text-align: center;
+    }
+    
+    .swiper-slide {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+    .our-products .card{
+        width: 80%;
     }
     
     .cart {
@@ -460,22 +459,28 @@ input {
 .prev {
 	left: 1em;
 }
-.prev {
-	left: 1em;
-}
 #page1 {
-	z-index: 5;
+	z-index: 8;
 }
 #page2 {
-	z-index: 4;
+	z-index: 7;
 }
 #page3 {
-	z-index: 3;
+	z-index: 6;
 }
 #page4 {
+    z-index: 5;
+}
+#page5 {
+    z-index: 4;
+}
+#page6 {
+    z-index: 3;
+}
+#page7 {
     z-index: 2;
 }
-#page5{
+#page8 {
     z-index: 1;
 }
 #checkbox-cover:checked ~ .book {
@@ -504,4 +509,31 @@ input {
 #checkbox-page4:checked ~ .book #page4 {
 	transform: rotateY(-180deg);
 	z-index: 5;
+}
+#checkbox-page5:checked ~ .book #page5 {
+	transform: rotateY(-180deg);
+	z-index: 6;
+}
+#checkbox-page6:checked ~ .book #page6 {
+	transform: rotateY(-180deg);
+	z-index: 7;
+}
+#checkbox-page7:checked ~ .book #page7 {
+	transform: rotateY(-180deg);
+	z-index: 8;
+}
+
+
+form .btn {
+    background-color: var(--primary-color);
+    transition: 0.5s;
+}
+
+form .btn:hover {
+    background: var(--secondary-color);
+}
+
+.links a{
+    text-decoration: none;
+    color: var(--primary-color);
 }
