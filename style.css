@@ -332,46 +332,7 @@
     height: 20px;
     cursor: pointer;
 }
-@media (max-width: 768px) {
-    .glass-bg {
-        display: inline-block;
-        background: rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
-        padding: 10px;
-        border-radius: 10px;
-        transition: 0.5s;
-    }
-    .slider-container {
-        max-width: 90%;
-    }
-    .send-gift {
-        height: auto;
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-    
-    .swiper-slide {
-        padding: 15px;
-        font-size: 0.9rem;
-    }
-    .our-products .card{
-        width: 80%;
-    }
-    
-    .cart {
-        width: 100%;
-    }
-    .listCard li {
-        grid-template-columns: 50px 1fr 1fr 60px;
-    }
-    .book{
-        rotate: 90deg;
-        scale: 0.7;
-        font-size: 14px;
-    }
-}
+
 
 
 
@@ -544,4 +505,45 @@ form .btn:hover {
 .info-section a{
     text-decoration: none;
     color: var(--white-color);
+}
+
+@media (max-width: 768px) {
+    .glass-bg {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+    .slider-container {
+        max-width: 90%;
+    }
+    .send-gift {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .swiper-slide {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+    .our-products .card{
+        width: 80%;
+    }
+    
+    .cart {
+        width: 100%;
+    }
+    .listCard li {
+        grid-template-columns: 50px 1fr 1fr 60px;
+    }
+    .book{
+        rotate: 90deg;
+        scale: 0.7;
+        font-size: 14px;
+    }
 }

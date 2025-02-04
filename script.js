@@ -44,7 +44,7 @@ addToCartButtons.forEach(button => {
         const listItem = document.createElement('li');
         listItem.innerHTML = `
             <div><img src="${productImage}" alt="${productName}" style="width: 60px; height: 60px;"></div>
-            <div>${productName}</div>
+            <div class="ms-2">${productName}</div>
             <div>$${productPrice}</div>
             <div><button class="remove-btn">Remove</button></div>
         `;
