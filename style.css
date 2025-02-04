@@ -538,7 +538,10 @@ form .btn:hover {
     background: var(--secondary-color);
 }
 
-.links a{
+.info-section p{
+    padding: 5px;
+}
+.info-section a{
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--white-color);
 }
