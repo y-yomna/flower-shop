@@ -9,11 +9,13 @@
     --secondary-color:#33c160;
     --white-color:#ffff;
 }
+/* Background Styles */
 .bg {
     background-image: url(imgs/header-bg1.jpg);
     background-size: cover;
     height: 100vh;
 }
+/* Navbar Styles */
 .navbar .nav-link, .navbar .navbar-brand {
     color: var(--primary-color);
     transition: 0.3s;
@@ -22,6 +24,7 @@
 .navbar .nav-link:hover {
     color: var(--secondary-color);
 }
+/* Header Styles */
 .header .btn {
     background-color: var(--primary-color);
     transition: 0.5s;
@@ -50,6 +53,7 @@
 .header-text span {
     color: var(--secondary-color);
 }
+/* Best Flower Section */
 .best-flower .main-text{
     color: var(--primary-color);
 }
@@ -102,7 +106,9 @@
     background: var(--secondary-color);
 }
 
-.best-flower .card:hover .btn, .best-flower .card:hover .card-icon, .best-flower .card:hover .img-2 {
+.best-flower .card:hover .btn,
+.best-flower .card:hover .card-icon,
+.best-flower .card:hover .img-2 {
     opacity: 1;
     visibility: visible;
 }
@@ -122,7 +128,7 @@
     background: var(--primary-color);
     color: var(--white-color);
 }
-
+/* About Section */
 .about {
     background-image: url(imgs/about-bg.jpg);
     background-size: cover;
@@ -155,19 +161,19 @@
     color: rgba(255, 255, 255, 0.2);
 }
 
-.about .swiper-button-next, .swiper-button-prev {
+.about .swiper-button-next,
+.swiper-button-prev {
     color: var(--white-color);
 }
 
-.swiper-button-next:hover, .swiper-button-prev:hover {
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
     color: var(--secondary-color);
 }
 .slider-container {
     max-width: 800px;
 }
-
-
-
+/* Send Gift Section */
 .send-gift {
     background-color: #e9e6ed;
     height: 50vh;
@@ -203,6 +209,7 @@
         transform: translateY(50%);
     }
 }
+/* filter*/
 .filter .dropdown {
     color: var(--primary-color);
 }
@@ -210,6 +217,7 @@
 .filter .dropdown:hover, .filter .dropdown-item:hover {
     color: var(--secondary-color);
 }
+/* our products section*/
 .our-products .card {
     transition: 0.5s;
 }
@@ -256,7 +264,9 @@
     background: var(--secondary-color);
 }
 
-.our-products .card:hover .btn, .our-products .card:hover .card-icon, .our-products .card:hover .img-2 {
+.our-products .card:hover .btn,
+.our-products .card:hover .card-icon,
+.our-products .card:hover .img-2 {
     opacity: 1;
     visibility: visible;
 }
@@ -279,7 +289,7 @@
     color: var(--white-color);
     background: var(--secondary-color);
 }
-
+/*cart*/
 .cart {
     transition: 0.5s;
     transform: translateX(100%);
@@ -332,10 +342,7 @@
     height: 20px;
     cursor: pointer;
 }
-
-
-
-
+/*book section*/
 .book {
 	width: 400px;
 	height: 500px;
@@ -488,8 +495,7 @@ input {
 	transform: rotateY(-180deg);
 	z-index: 8;
 }
-
-
+/*form section*/
 form .btn {
     background-color: var(--primary-color);
     transition: 0.5s;
@@ -506,7 +512,7 @@ form .btn:hover {
     text-decoration: none;
     color: var(--white-color);
 }
-
+/* Media Queries */
 @media (max-width: 768px) {
     .glass-bg {
         display: inline-block;
